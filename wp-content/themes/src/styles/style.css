@@ -457,7 +457,9 @@ textarea {
  * -----------------------------------------------------------------------------
  */
 body {
+  @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
   height: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
 /**
