@@ -534,5 +534,8 @@ img {
 .fact__value {
   font-weight: 700;
 }
+.fact--full {
+  height: 100vh;
+}
 
 /*# sourceMappingURL=style.css.map */

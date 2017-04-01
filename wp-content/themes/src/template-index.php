@@ -1,6 +1,13 @@
 <?php /* Template Name: Index Page Template */ get_header(); ?>
 
 	<main role="main" aria-label="Content">
+
+	<section class="fact fact--full">
+	<h1 style="color: #212121;">Video Games in real time</h1>
+	<h5 style="color: #212121;"> Scroll down to see what has happened in the video game world sincce you landed on this page!</h5>
+	</section>
+
+
 			<?php
 			$args = array( 'post_type' => 'fact', 'posts_per_page' => -1 );
 			$loop = new WP_Query( $args );
