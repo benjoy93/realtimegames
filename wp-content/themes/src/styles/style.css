@@ -458,8 +458,8 @@ textarea {
  */
 body {
   @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-  height: 100%;
   font-family: 'Lato', sans-serif;
+  height: 100%;
 }
 
 /**
@@ -474,11 +474,25 @@ footer {
 
 /**
  * -----------------------------------------------------------------------------
+ * $HEADINGS
+ * -----------------------------------------------------------------------------
+ */
+h2 {
+  color: blue;
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * $SECTION
  * -----------------------------------------------------------------------------
  */
 section {
   height: 100vh;
+}
+
+.fact-container:nth-of-type(even) {
+  font-weight: 100;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

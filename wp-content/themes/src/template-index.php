@@ -12,7 +12,9 @@
 				echo 'style="background-color:';
 				the_field('background_colour');
 				echo '">';
+				echo '<h2>';
 				the_title();
+			    echo '</h2>';
 				echo '<div id="demo"></div>';
 				echo '</section>';
 			endwhile;
