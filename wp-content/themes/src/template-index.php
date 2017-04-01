@@ -9,6 +9,7 @@
 
 
 			<?php
+			$namea = 1;
 			$args = array( 'post_type' => 'fact', 'posts_per_page' => -1 );
 			$loop = new WP_Query( $args );
 			while ( $loop->have_posts() ) : $loop->the_post();
@@ -54,18 +55,19 @@
 			?>
 
 			<script>
-				var js_variable  = 0;//'<?php echo $increment;?>';
+				var js_variable<?php echo $namea; ?>  = 0;//'<?php echo $increment;?>';
 
-				var interval = setInterval( increment, 1000);
+				var interval<?php echo $namea ?> = setInterval( increment<?php echo $namea ?>, 1000);
 
-				function increment(){
-					js_variable += 1;// js_variable % 360 + js_variable;
+				function increment<?php echo $namea; ?>(){
+					js_variable<?php echo $namea; ?> += 1;// js_variable % 360 + js_variable;
 
-					document.getElementById("demo-<?php the_title(); ?>").innerHTML = document.getElementById("<?php the_title(); ?>").getAttribute('data-increment') * js_variable;
+					document.getElementById("demo-<?php the_title(); ?>").innerHTML = document.getElementById("<?php the_title(); ?>").getAttribute('data-increment') * js_variable<?php echo $namea; ?>;
 				}
 			</script>
 
 			<?php
+				$namea++;
 			endwhile;
 			?>
 
