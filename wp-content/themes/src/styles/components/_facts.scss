@@ -14,11 +14,6 @@
     justify-content: center;
     flex-direction: column;
 
-    &__container {
-        width: 100%;
-
-    }
-
     &__icon {
         max-width: 150px;
         margin: 0 auto;
@@ -39,7 +34,5 @@
 
     &--full {
         height:100vh;
-        
     }
 }
-
