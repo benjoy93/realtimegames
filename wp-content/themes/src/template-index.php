@@ -29,9 +29,13 @@
 				the_post_thumbnail();
 				echo '</div>';
 
-				echo '<h2 class="fact__value" id="demo-';
+				echo '<h2 style="display: inline-block;" class="fact__value" id="demo-';
 				the_title();
-				echo '">2</h2>';
+				echo '"></h2>';
+
+				echo '<h2 style="display: inline-block; margin-left: 10px;">';
+				the_field('increment_unit');
+				echo '</h2>';
 
 				echo '<h3 class="fact__strapline">';
 				the_field('intro_text');
