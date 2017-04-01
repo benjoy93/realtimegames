@@ -2,9 +2,10 @@
 
 	<main role="main" aria-label="Content">
 
-	<section class="fact fact--full">
-	<h1 style="color: #212121;">Video Games in real time</h1>
-	<h5 style="color: #;"> Scroll down to see what has happened in the video game world since you landed on this page!</h5>
+	<section class="fact fact--full text-color--dark">
+		<h1>Video Games in real time</h1>
+		<h5> Scroll down to see what has happened in the video game world since you landed on this page!</h5>
+		<img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg">
 	</section>
 
 

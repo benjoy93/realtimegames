@@ -520,22 +520,41 @@ img {
   justify-content: center;
   flex-direction: column;
 }
-.fact__container {
-  width: 100%;
+@media all and (min-width: 1024px) {
+  .fact {
+    height: 100vh;
+  }
 }
 .fact__icon {
   max-width: 150px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
-.fact__strapline {
-  font-weight: 400;
-}
-.fact__value {
-  font-weight: 700;
-}
 .fact--full {
   height: 100vh;
+}
+
+/* Always declare trumps last */
+/**
+ * -----------------------------------------------------------------------------
+ * $TEXT
+ * -----------------------------------------------------------------------------
+ */
+.text-weight--thin {
+  font-weight: 300;
+}
+.text-weight--normal {
+  font-weight: 400;
+}
+.text-weight--bold {
+  font-weight: 700;
+}
+
+.text-color--dark {
+  color: #212121;
+}
+.text-color--light {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

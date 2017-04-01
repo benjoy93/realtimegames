@@ -14,14 +14,14 @@
     justify-content: center;
     flex-direction: column;
 
+    @include bp-min-width($bp-tablet) {
+        height: 100vh;
+    }
+
     &__icon {
         max-width: 150px;
         margin: 0 auto;
         margin-bottom: 20px;
-    }
-
-    &:nth-of-type(even) {
-
     }
 
     &--full {
