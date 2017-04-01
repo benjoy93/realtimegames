@@ -19,7 +19,7 @@
 				the_post_thumbnail();
 				echo '</div>';
 
-				echo '<h2 class="fact__value">2</h2>';
+				echo '<h2 class="fact__value" id="demo">2</h2>';
 
 				echo '<h3 class="fact__strapline">';
 				the_field('intro_text');
@@ -34,15 +34,24 @@
 	</main>
 
 	<script>
-		var js_variable  = '<?php echo $increment;?>';
+	var js_variable  = 0;//'<?php echo $increment;?>';
 
 		var interval = setInterval( increment, 1000);
 
 		function increment(){
-		    js_variable = js_variable % 360 + js_variable;
+		    js_variable += 1;// js_variable % 360 + js_variable;
+
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			  if (this.readyState == 4 && this.status == 200) {
+			   document.getElementById("demo").innerHTML = this.responseText * js_variable;
+			  }
+			};
+			xhttp.open("GET", "/wp-content/test.php", true);
+			xhttp.send();
 		}
 
-		document.getElementById("demo").innerHTML = js_variable;
+
 	</script>
 
 <?php get_footer(); ?>
