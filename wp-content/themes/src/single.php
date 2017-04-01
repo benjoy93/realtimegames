@@ -35,10 +35,6 @@
 
 			<?php the_content(); // Dynamic Content ?>
 
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
-
 			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
@@ -65,7 +61,5 @@
 	</section>
 	<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
