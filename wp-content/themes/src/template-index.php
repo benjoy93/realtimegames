@@ -4,7 +4,7 @@
 
 	<section class="fact fact--full">
 	<h1 style="color: #212121;">Video Games in real time</h1>
-	<h5 style="color: #212121;"> Scroll down to see what has happened in the video game world since you landed on this page!</h5>
+	<h5 style="color: #;"> Scroll down to see what has happened in the video game world since you landed on this page!</h5>
 	</section>
 
 
@@ -45,7 +45,7 @@
 				the_field('increment_unit');
 				echo '</h2>';
 
-				echo '<h3 class="fact__strapline">';
+				echo '<h3 class="fact__strapline text-weight--normal">';
 				the_field('intro_text');
 				echo '</h3>';
 
