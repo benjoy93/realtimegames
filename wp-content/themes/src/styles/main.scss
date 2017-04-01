@@ -15,7 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import 'vars.scss';
 
 @import 'mixins/active-states.scss';
-@import 'mixins/breakpoints.scss';
+@import 'mixins/media-queries.scss';
 @import 'mixins/rem.scss';
 
 @import 'reset/box-sizing.scss';
@@ -24,4 +24,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import 'base/body.scss';
 @import 'base/footer.scss';
 @import 'base/headings.scss';
+@import 'base/images.scss';
 @import 'base/section.scss';
+
+@import 'components/facts.scss';

@@ -19,9 +19,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*///////////////
 /// ACTIVE STATES
 */
-/*///////////////
-/// BREAKPOINTS
-*/
+/**
+ * -----------------------------------------------------------------------------
+ * $MEDIAQUERIES
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * Mixins for defining media queries. These mixins should always be used
+ * to define media query breakpoints.
+ */
+/**
+ * Only use in rare circumstances, favour `bp-min-width`.
+ */
 /**
  * -----------------------------------------------------------------------------
  * $REM
@@ -460,6 +469,7 @@ body {
   @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
   font-family: 'Lato', sans-serif;
   height: 100%;
+  color: white;
 }
 
 /**
@@ -468,7 +478,8 @@ body {
  * -----------------------------------------------------------------------------
  */
 footer {
-  background-color: white;
+  padding: 20px;
+  background-color: #440099;
   text-align: center;
 }
 
@@ -477,8 +488,17 @@ footer {
  * $HEADINGS
  * -----------------------------------------------------------------------------
  */
-h2 {
-  color: blue;
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $IMAGES
+ * -----------------------------------------------------------------------------
+ */
+img {
+  max-width: 100%;
 }
 
 /**
@@ -486,13 +506,33 @@ h2 {
  * $SECTION
  * -----------------------------------------------------------------------------
  */
-section {
-  height: 100vh;
-}
-
-.fact-container:nth-of-type(even) {
-  font-weight: 100;
+/**
+ * -----------------------------------------------------------------------------
+ * $FACTS
+ * -----------------------------------------------------------------------------
+ */
+.fact {
+  padding: 20px;
+  min-height: 50vh;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.fact__container {
+  width: 100%;
+}
+.fact__icon {
+  max-width: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.fact__strapline {
+  font-weight: 400;
+}
+.fact__value {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

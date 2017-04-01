@@ -1,0 +1,39 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $FACTS
+ * -----------------------------------------------------------------------------
+ */
+
+.fact {
+    padding: 20px;
+    min-height: 50vh;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__container {
+        width: 100%;
+
+    }
+
+    &__icon {
+        max-width: 150px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    &__strapline {
+        font-weight: 400;
+    }
+
+    &__value {
+        font-weight: 700;
+    }
+
+    &:nth-of-type(even) {
+
+    }
+}
