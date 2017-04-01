@@ -14,4 +14,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import 'vars.scss';
 
+@import 'mixins/active-states.scss';
+@import 'mixins/breakpoints.scss';
+@import 'mixins/rem.scss';
+
 @import 'base/body.scss';
+@import 'base/section.scss';

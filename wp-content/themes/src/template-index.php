@@ -8,9 +8,11 @@
 				$increment = get_field('increment_value');
 				echo '<section class="fact-container" data-service="';
 				echo $increment;
+				echo '"';
+				echo 'style="background-color:';
+				the_field('background_colour');
 				echo '">';
 				the_title();
-				the_field('background_colour');
 				echo '<div id="demo"></div>';
 				echo '</section>';
 			endwhile;

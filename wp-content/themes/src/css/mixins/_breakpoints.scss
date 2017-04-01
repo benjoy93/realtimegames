@@ -1,0 +1,15 @@
+/*///////////////
+/// BREAKPOINTS
+*///////////////
+
+@mixin tablet {
+  @media (min-width: #{$bp-small}) and (max-width: #{$bp-medium-large - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$bp-medium-large}) {
+    @content;
+  }
+}

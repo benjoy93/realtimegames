@@ -11,8 +11,45 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+/**
+ * -----------------------------------------------------------------------------
+ * $VARS
+ * -----------------------------------------------------------------------------
+ */
+/*///////////////
+/// ACTIVE STATES
+*/
+/*///////////////
+/// BREAKPOINTS
+*/
+/**
+ * -----------------------------------------------------------------------------
+ * $REM
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * Useful mixin to assist with using REM units with a PX fallback.
+ * Mixin is courtesy of Hugo Giraudel
+ * http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+ *
+ * Example usage is `@include rem(font-size, 1.6rem);`
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $BODY
+ * -----------------------------------------------------------------------------
+ */
 body {
-  background-color: red;
+  background-color: blue;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $SECTION
+ * -----------------------------------------------------------------------------
+ */
+section {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
