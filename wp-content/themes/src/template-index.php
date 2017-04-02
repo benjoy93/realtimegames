@@ -5,8 +5,11 @@
 	<section class="fact fact--full text-color--dark">
 		<h1>Video Games in real time</h1>
 		<h5>Scroll down to see what has happened in the video game world since you landed on this page!</h5>
-		<img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg">
+
+		<a href="#facts"><img class="max-width--50 animate animate--down" src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"></a>
 	</section>
+
+	<section id="facts">
 
 	<?php
 	$namea = 1;
@@ -67,9 +70,11 @@
 	</script>
 
 	<?php
-	$namea++;
-endwhile;
-?>
+		$namea++;
+		endwhile;
+	?>
+
+	</section>
 
 </main>
 
