@@ -374,10 +374,10 @@ add_filter('image_send_to_editor', 'remove_width_attribute', 10 ); // Remove wid
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
 /*------------------------------------*\
-    Custom Post Types
+CUSTOM POST TYPE FACT
 \*------------------------------------*/
 
-// Create 1 Custom Post type for a Demo, called HTML5-Blank
+// Create a Custom Post type for Facts
 function create_post_type_html5()
 {
     register_taxonomy_for_object_type('category', 'fact'); // Register Taxonomies for Category
@@ -408,3 +408,13 @@ function create_post_type_html5()
         'can_export' => true // Allows export in Tools > Export
     ));
 }
+
+/*------------------------------------*\
+REMOVE WP EMOJI
+\*------------------------------------*/
+
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
