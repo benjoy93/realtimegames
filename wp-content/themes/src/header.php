@@ -34,3 +34,18 @@
 
 		<!-- wrapper -->
 		<div class="wrapper">
+
+			<!-- header -->
+			<header class="header clear" role="banner">
+
+					<!-- nav -->
+					<nav class="nav" role="navigation">
+						<?php
+						wp_nav_menu( array(
+						) );
+						?>
+					</nav>
+					<!-- /nav -->
+
+			</header>
+			<!-- /header -->
