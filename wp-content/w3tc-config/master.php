@@ -157,9 +157,13 @@
     ],
     "pgcache.reject.front_page": "0",
     "pgcache.reject.logged": "1",
-    "pgcache.reject.logged_roles": "0",
+    "pgcache.reject.logged_roles": "1",
     "pgcache.reject.roles": [
-        ""
+        "administrator",
+        "editor",
+        "author",
+        "contributor",
+        "subscriber"
     ],
     "pgcache.reject.uri": [
         "wp-.*\\.php",
