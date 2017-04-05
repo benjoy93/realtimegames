@@ -488,7 +488,7 @@ footer {
  * $HEADER
  * -----------------------------------------------------------------------------
  */
-nav {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -497,39 +497,40 @@ nav {
   color: white;
 }
 
-nav ul {
+header ul {
   text-align: center;
   padding-left: 0px;
+  margin: 0px;
 }
 
-nav li {
-  color: white;
+header li {
   list-style-type: none;
   text-align: center;
   display: inline-block;
 }
 
-nav a {
+header a {
   text-decoration: none;
   color: white;
-  display: inline-block;
+  display: block;
   width: 100%;
+  padding: 16px 0;
 }
 
-nav li:hover {
+header li:hover {
   background-color: #375;
 }
 
-nav a:visited {
+header a:visited {
   color: white;
 }
 
 @media screen and (min-width: 768px) {
-  nav ul {
+  header ul {
     display: flex;
   }
 
-  nav li {
+  header li {
     flex: 1 1 0;
   }
 }
