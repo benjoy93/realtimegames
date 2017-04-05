@@ -1,0 +1,54 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $HEADER
+ * -----------------------------------------------------------------------------
+ */
+ 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #409;
+    width: 100%;
+    color:white;
+}
+
+nav ul {
+    text-align: center;
+    padding-left: 0px;
+}
+
+nav li {
+    color:white;
+    list-style-type: none;
+    text-align: center;
+    display:inline-block;
+ 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    width:100%;
+}
+
+nav li:hover {
+    background-color: #375;
+}
+
+nav a:visited {
+    color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        flex: 1 1 0;
+    }
+}
