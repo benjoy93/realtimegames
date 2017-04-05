@@ -492,48 +492,38 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #409;
+  background-color: white;
   width: 100%;
-  color: white;
+  color: rgba(0, 0, 0, 0.5);
 }
-
 header ul {
-  text-align: center;
+  text-align: right;
   padding-left: 0px;
   margin: 0px;
 }
-
 header li {
   list-style-type: none;
   text-align: center;
   display: inline-block;
+  padding: 10px;
 }
 
 header a {
   text-decoration: none;
-  color: white;
+  color: rgba(0, 0, 0, 0.5);
   display: block;
   width: 100%;
   padding: 16px 0;
+  transition: 0.4s color ease;
 }
-
-header li:hover {
-  background-color: #375;
+header a:hover {
+  color: black;
 }
 
 header a:visited {
-  color: white;
+  color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (min-width: 768px) {
-  header ul {
-    display: flex;
-  }
-
-  header li {
-    flex: 1 1 0;
-  }
-}
 /**
  * -----------------------------------------------------------------------------
  * $HEADINGS
