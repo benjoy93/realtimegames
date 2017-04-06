@@ -33,10 +33,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 @import 'components/facts.scss';
+@import 'components/wrapper.scss';
 
 /* Always declare trumps last */
 
 @import 'trumps/animate.scss';
 @import 'trumps/display.scss';
+@import 'trumps/position.scss';
 @import 'trumps/size.scss';
+@import 'trumps/spacing.scss';
 @import 'trumps/text.scss';
