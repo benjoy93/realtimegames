@@ -12,6 +12,7 @@ header {
     width: 100%;
     color: rgba(0, 0, 0, 0.5);
     height: $header-height;
+    padding: $spacing-large;
 
     ul {
         text-align: right;
@@ -20,28 +21,22 @@ header {
     }
 
     li {
+        margin-left: $spacing-large;
         list-style-type: none;
         text-align: center;
         display: inline-block;
-        padding: 10px;
+        font-weight: bold;
     }
 }
 
 
 header a {
-    text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
     display: block;
     width: 100%;
-    padding: 16px 0;
     transition: 0.4s color ease;
 
     &:hover {
         color: rgba(0, 0, 0, 1);
     }
-}
-
-
-header a:visited {
-    color: rgba(0, 0, 0, 0.5);
 }
