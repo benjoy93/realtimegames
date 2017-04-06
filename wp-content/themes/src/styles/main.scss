@@ -21,6 +21,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import 'reset/box-sizing.scss';
 @import 'reset/normalize.scss';
 
+@import 'base/anchor.scss';
+@import 'base/aside.scss';
 @import 'base/body.scss';
 @import 'base/footer.scss';
 @import 'base/header.scss';
@@ -35,5 +37,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Always declare trumps last */
 
 @import 'trumps/animate.scss';
+@import 'trumps/display.scss';
 @import 'trumps/size.scss';
 @import 'trumps/text.scss';
