@@ -4,6 +4,12 @@
  * -----------------------------------------------------------------------------
  */
 
+.text-align{
+    &--left { text-align: left; }
+    &--center { text-align: center; }
+    &--right { text-align: right; }
+}
+
 .text-weight{
     &--thin { font-weight: 300; }
     &--normal { font-weight: 400; }
@@ -13,4 +19,24 @@
 .text-color{
     &--dark { color: $color-black; }
     &--light { color: $color-white; }
+}
+
+.text-fade {
+    transition: 0.4s all ease;
+
+    &--dark {
+        color: rgba($color-black, 0.2);
+
+        @include active-states() {
+            color: rgba($color-black, 1);
+        }
+    }
+
+    &--light {
+        color: rgba($color-white, 0.2);
+
+        @include active-states() {
+            color: rgba($color-white, 1);
+        }
+    }
 }
