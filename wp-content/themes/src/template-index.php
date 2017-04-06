@@ -3,6 +3,7 @@
 <main role="main" aria-label="Content">
 
 	<aside>
+		<h2>Credits</h2>
 		<?php
 			$args = array( 'post_type' => 'credit', 'posts_per_page' => -1 );
 			$loop = new WP_Query( $args );
