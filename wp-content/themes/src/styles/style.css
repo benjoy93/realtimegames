@@ -16,6 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * $VARS
  * -----------------------------------------------------------------------------
  */
+/* SPACING UNITS */
 /*///////////////
 /// ACTIVE STATES
 */
@@ -475,6 +476,9 @@ a {
  * $ASIDE
  * -----------------------------------------------------------------------------
  */
+aside {
+  color: #212121;
+}
 aside a {
   color: #212121;
 }
@@ -514,7 +518,8 @@ header {
   background-color: white;
   width: 100%;
   color: rgba(0, 0, 0, 0.5);
-  height: 60px;
+  height: 59px;
+  padding: 20px;
 }
 header ul {
   text-align: right;
@@ -522,26 +527,21 @@ header ul {
   margin: 0px;
 }
 header li {
+  margin-left: 20px;
   list-style-type: none;
   text-align: center;
   display: inline-block;
-  padding: 10px;
+  font-weight: bold;
 }
 
 header a {
-  text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
   display: block;
   width: 100%;
-  padding: 16px 0;
   transition: 0.4s color ease;
 }
 header a:hover {
   color: black;
-}
-
-header a:visited {
-  color: rgba(0, 0, 0, 0.5);
 }
 
 /**
@@ -571,11 +571,6 @@ img {
  * $MAIN
  * -----------------------------------------------------------------------------
  */
-main {
-  padding-top: 60px;
-  color: #212121;
-}
-
 /**
  * -----------------------------------------------------------------------------
  * $SECTION
@@ -607,6 +602,15 @@ main {
 }
 .fact--full {
   height: 100vh;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $WRAPPER
+ * -----------------------------------------------------------------------------
+ */
+.wrapper {
+  padding-top: 59px;
 }
 
 /* Always declare trumps last */
@@ -651,6 +655,42 @@ main {
 
 /**
  * -----------------------------------------------------------------------------
+ * $POSITION
+ * -----------------------------------------------------------------------------
+ */
+.position--absolute {
+  position: absolute;
+}
+.position--fixed {
+  position: fixed;
+}
+.position--relative {
+  position: relative;
+}
+.position--top {
+  top: 0;
+}
+.position--right {
+  right: 0;
+}
+.position--bottom {
+  bottom: 0;
+}
+.position--left {
+  left: 0;
+}
+.position--front {
+  z-index: 100;
+}
+.position--middle {
+  z-index: 50;
+}
+.position--back {
+  z-index: 0;
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * $SIZE
  * -----------------------------------------------------------------------------
  */
@@ -672,9 +712,164 @@ main {
 
 /**
  * -----------------------------------------------------------------------------
+ * $SPACING
+ * -----------------------------------------------------------------------------
+ */
+.padding--tiny {
+  padding: 2.5px;
+}
+.padding--small {
+  padding: 5px;
+}
+.padding--normal {
+  padding: 10px;
+}
+.padding--large {
+  padding: 20px;
+}
+.padding--huge {
+  padding: 40px;
+}
+
+.padding-left--none {
+  padding-left: 0;
+}
+.padding-left--tiny {
+  padding-left: 2.5px;
+}
+.padding-left--small {
+  padding-left: 5px;
+}
+.padding-left--normal {
+  padding-left: 10px;
+}
+.padding-left--large {
+  padding-left: 20px;
+}
+.padding-left--huge {
+  padding-left: 40px;
+}
+
+.padding-top--none {
+  padding-top: 0;
+}
+.padding-top--tiny {
+  padding-top: 2.5px;
+}
+.padding-top--small {
+  padding-top: 5px;
+}
+.padding-top--normal {
+  padding-top: 10px;
+}
+.padding-top--large {
+  padding-top: 20px;
+}
+.padding-top--huge {
+  padding-top: 40px;
+}
+
+.padding-right--none {
+  padding-right: 0;
+}
+.padding-right--tiny {
+  padding-right: 2.5px;
+}
+.padding-right--small {
+  padding-right: 5px;
+}
+.padding-right--normal {
+  padding-right: 10px;
+}
+.padding-right--large {
+  padding-right: 20px;
+}
+.padding-right--huge {
+  padding-right: 40px;
+}
+
+.padding-bottom--none {
+  padding-bottom: 0;
+}
+.padding-bottom--tiny {
+  padding-bottom: 2.5px;
+}
+.padding-bottom--small {
+  padding-bottom: 5px;
+}
+.padding-bottom--normal {
+  padding-bottom: 10px;
+}
+.padding-bottom--large {
+  padding-bottom: 20px;
+}
+.padding-bottom--huge {
+  padding-bottom: 40px;
+}
+
+.margin-left--tiny {
+  margin-left: 2.5px;
+}
+.margin-left--small {
+  margin-left: 5px;
+}
+.margin-left--normal {
+  margin-left: 10px;
+}
+.margin-left--large {
+  margin-left: 20px;
+}
+.margin-left--huge {
+  margin-left: 40px;
+}
+
+.margin-bottom--none {
+  margin-bottom: 0;
+}
+.margin-bottom--tiny {
+  margin-bottom: 2.5px;
+}
+.margin-bottom--small {
+  margin-bottom: 5px;
+}
+.margin-bottom--normal {
+  margin-bottom: 10px;
+}
+.margin-bottom--large {
+  margin-bottom: 20px;
+}
+.margin-bottom--huge {
+  margin-bottom: 40px;
+}
+
+.margin-auto--left {
+  margin-left: auto;
+}
+.margin-auto--top {
+  margin-top: auto;
+}
+.margin-auto--right {
+  margin-right: auto;
+}
+.margin-auto--bottom {
+  margin-bottom: auto;
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * $TEXT
  * -----------------------------------------------------------------------------
  */
+.text-align--left {
+  text-align: left;
+}
+.text-align--center {
+  text-align: center;
+}
+.text-align--right {
+  text-align: right;
+}
+
 .text-weight--thin {
   font-weight: 300;
 }
@@ -689,6 +884,22 @@ main {
   color: #212121;
 }
 .text-color--light {
+  color: white;
+}
+
+.text-fade {
+  transition: 0.4s all ease;
+}
+.text-fade--dark {
+  color: rgba(33, 33, 33, 0.2);
+}
+.text-fade--dark:hover, .text-fade--dark:focus, .text-fade--dark:active {
+  color: #212121;
+}
+.text-fade--light {
+  color: rgba(255, 255, 255, 0.2);
+}
+.text-fade--light:hover, .text-fade--light:focus, .text-fade--light:active {
   color: white;
 }
 
