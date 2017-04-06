@@ -11,8 +11,19 @@
 			echo '<a href="';
 				the_field('credit_url');
 			echo '">';
-			the_field('credit_name');
-			the_field('credit_role');
+
+			echo '<div class="credits">';
+
+				echo '<h3 class="display--inline">';
+					the_field('credit_name');
+				echo '</h3>';
+
+				echo '<h3 class="display--inline">';
+					the_field('credit_role');
+				echo '</h3>';
+
+			echo '</div>';
+
 			echo '</a>';
 			endwhile;
 		?>
