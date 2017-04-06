@@ -14,4 +14,14 @@ $color-black: #212121;
 $color-purple: #440099;
 $color-white: white;
 
-$header-height: 60px;
+$header-height: 59px;
+
+
+/* SPACING UNITS */
+
+$spacing-normal: 10px;
+
+$spacing-tiny: $spacing-normal/4;
+$spacing-small: $spacing-normal/2;
+$spacing-large: $spacing-normal*2;
+$spacing-huge: $spacing-normal*4;
