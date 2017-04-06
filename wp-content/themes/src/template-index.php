@@ -2,34 +2,34 @@
 
 <main role="main" aria-label="Content">
 
-	<aside>
-		<h2>Credits</h2>
-		<?php
-			$args = array( 'post_type' => 'credit', 'posts_per_page' => -1 );
-			$loop = new WP_Query( $args );
-			while ( $loop->have_posts() ) : $loop->the_post();
-			echo '<a href="';
-				the_field('credit_url');
-			echo '">';
-
-			echo '<div class="credits">';
-
-				echo '<h3 class="display--inline">';
-					the_field('credit_name');
-				echo '</h3>';
-
-				echo '<h3 class="display--inline">';
-					the_field('credit_role');
-				echo '</h3>';
-
-			echo '</div>';
-
-			echo '</a>';
-			endwhile;
-		?>
-	</aside>
-
 	<section class="fact fact--full text-color--dark">
+		<aside class="position--absolute position--top position--left padding--large text-align--left">
+			<h2>Credits</h2>
+			<?php
+				$args = array( 'post_type' => 'credit', 'posts_per_page' => -1 );
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+				echo '<a href="';
+					the_field('credit_url');
+				echo '">';
+
+				echo '<div class="credits">';
+
+					echo '<h3 class="display--inline">';
+						the_field('credit_name');
+					echo '</h3>';
+
+					echo '<h3 class="display--inline margin-left--normal text-fade text-fade--dark">';
+						the_field('credit_role');
+					echo '</h3>';
+
+				echo '</div>';
+
+				echo '</a>';
+				endwhile;
+			?>
+		</aside>
+
 		<h1>Video Games in real time</h1>
 		<h5>Scroll down to see what has happened in the video game world since you landed on this page!</h5>
 

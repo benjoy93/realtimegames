@@ -32,20 +32,20 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
+		<!-- header -->
+		<header class="header clear" role="banner">
 
-			<!-- header -->
-			<header class="header clear" role="banner">
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php
+				<!-- nav -->
+				<nav class="nav" role="navigation">
+					<?php
 						wp_nav_menu( array(
 						) );
-						?>
-					</nav>
-					<!-- /nav -->
+					?>
+				</nav>
+				<!-- /nav -->
 
-			</header>
-			<!-- /header -->
+		</header>
+		<!-- /header -->
+
+		<!-- wrapper -->
+		<div class="wrapper">
