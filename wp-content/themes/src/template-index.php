@@ -2,6 +2,21 @@
 
 <main role="main" aria-label="Content">
 
+	<aside>
+		<?php
+			$args = array( 'post_type' => 'credit', 'posts_per_page' => -1 );
+			$loop = new WP_Query( $args );
+			while ( $loop->have_posts() ) : $loop->the_post();
+			echo '<a href="';
+				the_field('credit_url');
+			echo '">';
+			the_field('credit_name');
+			the_field('credit_role');
+			echo '</a>';
+			endwhile;
+		?>
+	</aside>
+
 	<section class="fact fact--full text-color--dark">
 		<h1>Video Games in real time</h1>
 		<h5>Scroll down to see what has happened in the video game world since you landed on this page!</h5>

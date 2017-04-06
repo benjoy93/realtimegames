@@ -338,7 +338,8 @@ function html5blankcomments($comment, $args, $depth)
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_fact'); // Add our Fact Post Type
+add_action('init', 'create_post_type_credit'); // Add our Credit Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -374,11 +375,11 @@ add_filter('image_send_to_editor', 'remove_width_attribute', 10 ); // Remove wid
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
 /*------------------------------------*\
-CUSTOM POST TYPE FACT
+    CUSTOM POST TYPE FACT
 \*------------------------------------*/
 
 // Create a Custom Post type for Facts
-function create_post_type_html5()
+function create_post_type_fact()
 {
     register_taxonomy_for_object_type('category', 'fact'); // Register Taxonomies for Category
     register_taxonomy_for_object_type('post_tag', 'fact');
@@ -397,6 +398,42 @@ function create_post_type_html5()
             'search_items' => __('Search Fact', 'fact'),
             'not_found' => __('No Facts found', 'fact'),
             'not_found_in_trash' => __('No Facts found in Trash', 'fact')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true // Allows export in Tools > Export
+    ));
+}
+
+/*------------------------------------*\
+    CUSTOM POST TYPE FACT
+\*------------------------------------*/
+
+// Create a Custom Post type for Facts
+function create_post_type_credit()
+{
+    register_taxonomy_for_object_type('category', 'credit'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'credit');
+    register_post_type('credit', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Credit', 'credit'), // Rename these to suit
+            'singular_name' => __('Credit', 'credit'),
+            'add_new' => __('Add New', 'credit'),
+            'add_new_item' => __('Add New Credit', 'credit'),
+            'edit' => __('Edit', 'html5blank'),
+            'edit_item' => __('Edit Credit', 'credit'),
+            'new_item' => __('New Credit', 'credit'),
+            'view' => __('View Credit', 'credit'),
+            'view_item' => __('View Credit', 'credit'),
+            'search_items' => __('Search Credit', 'credit'),
+            'not_found' => __('No Credits found', 'credit'),
+            'not_found_in_trash' => __('No Credits found in Trash', 'credit')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
