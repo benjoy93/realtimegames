@@ -1,0 +1,20 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $POSITION
+ * -----------------------------------------------------------------------------
+ */
+
+.position {
+    &--absolute { position: absolute; }
+    &--fixed { position: fixed; }
+    &--relative { position: relative; }
+
+    &--top { top: 0; }
+    &--right { right: 0; }
+    &--bottom { bottom: 0; }
+    &--left { left: 0; }
+
+    &--front { z-index: 100; }
+    &--middle { z-index: 50; }
+    &--back { z-index: 0; }
+}
