@@ -468,7 +468,7 @@ textarea {
  */
 a {
   text-decoration: none;
-  color: white;
+  color: #FFFFFA;
 }
 
 /**
@@ -477,10 +477,10 @@ a {
  * -----------------------------------------------------------------------------
  */
 aside {
-  color: #212121;
+  color: #0F0E11;
 }
 aside a {
-  color: #212121;
+  color: #0F0E11;
 }
 
 /**
@@ -492,7 +492,7 @@ body {
   @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
   font-family: 'Lato', sans-serif;
   height: 100%;
-  color: white;
+  color: #FFFFFA;
 }
 
 /**
@@ -502,7 +502,7 @@ body {
  */
 footer {
   padding: 20px;
-  background-color: #440099;
+  background-color: #14213D;
   text-align: center;
 }
 
@@ -878,26 +878,26 @@ img {
 }
 
 .text-color--dark {
-  color: #212121;
+  color: #0F0E11;
 }
 .text-color--light {
-  color: white;
+  color: #FFFFFA;
 }
 
 .text-fade {
   transition: 0.4s all ease;
 }
 .text-fade--dark {
-  color: rgba(33, 33, 33, 0.2);
+  color: rgba(15, 14, 17, 0.2);
 }
 .text-fade--dark:hover, .text-fade--dark:focus, .text-fade--dark:active {
-  color: #212121;
+  color: #0f0e11;
 }
 .text-fade--light {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 250, 0.2);
 }
 .text-fade--light:hover, .text-fade--light:focus, .text-fade--light:active {
-  color: white;
+  color: #fffffa;
 }
 
 /*# sourceMappingURL=style.css.map */
