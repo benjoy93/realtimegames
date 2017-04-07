@@ -45,7 +45,7 @@
 	while ( $loop->have_posts() ) : $loop->the_post();
 	$increment = get_field('increment_value');
 
-	echo '<section class="fact ';
+	echo '<section class="fact position--relative ';
 	the_title();
 	echo '" ';
 
@@ -61,7 +61,7 @@
 	the_field('background_colour');
 	echo '">';
 
-	echo '<div class="fact__container">';
+	echo '<div class="fact__container ">';
 
 	echo '<div class="fact__icon">';
 	the_post_thumbnail();
@@ -78,6 +78,16 @@
 	echo '<h3 class="fact__strapline text-weight--normal">';
 	the_field('intro_text');
 	echo '</h3>';
+
+	?>
+
+	<div class="fact__source position--right position--bottom">
+		<cite>Sourced from:
+			<a class="margin-left--small" href="<?php the_field('source_url'); ?>"> <?php the_field('source_name'); ?> </a>
+		</cite>
+	</div>
+
+	<?php
 
 	echo '</div>';
 
