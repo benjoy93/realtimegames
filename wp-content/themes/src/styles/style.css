@@ -500,12 +500,6 @@ body {
  * $FOOTER
  * -----------------------------------------------------------------------------
  */
-footer {
-  padding: 20px;
-  background-color: #14213D;
-  text-align: center;
-}
-
 /**
  * -----------------------------------------------------------------------------
  * $HEADER
@@ -635,6 +629,27 @@ img {
     transform: translateY(0);
   }
 }
+/**
+ * -----------------------------------------------------------------------------
+ * $BACKGROUND
+ * -----------------------------------------------------------------------------
+ */
+.background--primary {
+  background-color: #14213D;
+}
+.background--secondary {
+  background-color: #2A1E5C;
+}
+.background--tertiary {
+  background-color: #EE4266;
+}
+.background--black {
+  background-color: #0F0E11;
+}
+.background--white {
+  background-color: #FFFFFA;
+}
+
 /**
  * -----------------------------------------------------------------------------
  * $DISPLAY
