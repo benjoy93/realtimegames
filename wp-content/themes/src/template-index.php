@@ -67,11 +67,11 @@
 	the_post_thumbnail();
 	echo '</div>';
 
-	echo '<h2 style="display: inline-block;" class="fact__value" id="demo-';
+	echo '<h2 class="fact__value display--inline-block" id="demo-';
 	the_title();
 	echo '"></h2>';
 
-	echo '<h2 style="display: inline-block; margin-left: 10px;">';
+	echo '<h2 class="display--inline-block margin-left--normal">';
 	the_field('increment_unit');
 	echo '</h2>';
 
