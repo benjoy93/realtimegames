@@ -587,6 +587,16 @@ img {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+.fact__source {
+  position: relative;
+  padding: 10px;
+}
+@media all and (min-width: 640px) {
+  .fact__source {
+    position: absolute;
+    padding: 40px;
+  }
+}
 .fact--full {
   height: 100vh;
 }

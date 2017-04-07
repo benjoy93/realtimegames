@@ -24,6 +24,16 @@
         margin-bottom: 20px;
     }
 
+    &__source {
+        position: relative;
+        padding: $spacing-normal;
+
+        @include bp-min-width($bp-mobile) {
+            position: absolute;
+            padding: $spacing-huge;
+        }
+    }
+
     &--full {
         height:100vh;
     }
