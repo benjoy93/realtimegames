@@ -33,7 +33,7 @@
 	<body <?php body_class(); ?>>
 
 		<!-- header -->
-		<header class="header clear" role="banner">
+		<header class="header clear position--fixed position--top position--left" role="banner">
 
 				<!-- nav -->
 				<nav class="nav" role="navigation">
