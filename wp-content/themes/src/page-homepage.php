@@ -30,7 +30,7 @@
 	</aside>
 
 	<h1><?php the_field('intro_header', 4); ?></h1>
-	<h5><?php the_field('intro_text', 4); ?></h5>
+	<p class="text-weight--bold"><?php the_field('intro_text', 4); ?></p>
 
 	<a href="#facts"><img class="max-width--50 animate animate--down" src="<?php the_field('arrow_icon', 4); ?>"></a>
 </section>
