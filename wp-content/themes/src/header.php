@@ -25,7 +25,7 @@
 	<body <?php body_class(); ?>>
 
 		<!-- header -->
-		<header class="header clear position--fixed position--top position--left" role="banner">
+		<header class="header clear position--absolute position--top position--left position--middle" role="banner">
 
 				<!-- nav -->
 				<nav class="nav" role="navigation">
