@@ -1,8 +1,8 @@
 			<!-- footer -->
-			<footer class="footer padding--normal background--primary text-align--center" role="contentinfo">
+			<footer class="footer padding--large background--primary text-align--center" role="contentinfo">
 
 				<!-- copyright -->
-				<p class="copyright">
+				<p class="copyright margin-bottom--none">
 					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
 				</p>
 				<!-- /copyright -->
