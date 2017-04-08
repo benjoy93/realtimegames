@@ -11,7 +11,7 @@
 				<h1>GAME OVER</h1>
 				
 				
-				<img class="error404image" src="http://realtimegames.dev/wp-content/uploads/2017/04/RIP.svg" /> 
+				<img class="error404image" src="http://realtimegames.dev/wp-content/uploads/2017/04/space-invader.svg" /> 
 				
 				
 
