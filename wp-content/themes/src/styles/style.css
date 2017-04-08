@@ -47,6 +47,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*///////////////
 /// BOX-SIZING
 */
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
 html {
   box-sizing: border-box;
 }
@@ -501,19 +502,18 @@ body {
  * -----------------------------------------------------------------------------
  */
 .error404section {
-  min-height: 50vh;
   text-align: center;
-  padding: 10px;
-}
-
-.error404background {
   background-color: #ee4266;
-  height: 100%;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .error404image {
   padding: 10px;
   width: 25%;
+}
+
+p a:hover {
+  color: #14213d;
 }
 
 /**
