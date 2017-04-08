@@ -4,20 +4,22 @@
  * -----------------------------------------------------------------------------
  */
 
-.error404section {
-    min-height: 50vh;
-    text-align: center;
-    padding: 10px;
-}
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
-.error404background {
+.error404section {
+    text-align: center;
     background-color: #ee4266;
-    height: 100%;
-}
+    font-family: 'Press Start 2P', cursive;
+    }
 
 .error404image {
     padding: 10px;
     width: 25%;
 }
+
+p a:hover {
+    color: #14213d;
+}
+
 
 

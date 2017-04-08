@@ -2,11 +2,12 @@
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section class="error404background"> 
+		<section class="error404background error404section"> 
 
 			<!-- article -->
-			<article id="post-404" class= "error404section error404">
+			<article id="post-404">
              
+				<div class="fact fact--full">
 				<h1>GAME OVER</h1>
 				
 				
@@ -14,10 +15,12 @@
 				
 				
 
-				<h2>You have wasted <br /><span id="demo"></span> seconds <br /> on a page that doesn't exist!</h2>
+					<h2>You have wasted </h2>
+					<h2><span id="demo"></span> seconds</h2>
+					<h2> on a page that doesn't exist!</h2>
 
-				<p> <a href="/">Go back to awesome video game stats</a></p>
-				
+				<p class"hover404"> <a href="/">Go back to awesome video game stats</a></p>
+				</div>
             
 			</article>
 			<!-- /article -->
