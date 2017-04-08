@@ -2,18 +2,23 @@
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section>
+		<section class="error404background"> 
 
 			<!-- article -->
-			<article id="post-404">
+			<article id="post-404" class= "error404section error404">
+             
+				<h1>GAME OVER</h1>
+				
+				
+				<img class="error404image" src="http://realtimegames.dev/wp-content/uploads/2017/04/RIP.svg" /> 
+				
+				
 
-				<h1><?php _e( 'Nothing to see here!', 'html5blank' ); ?></h1>
-				<h2>
-					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
-				</h2>
+				<h2>You have wasted <br /><span id="demo"></span> seconds <br /> on a page that doesn't exist!</h2>
 
-				<div id="demo"></div>
-
+				<p> <a href="/">Go back to awesome video game stats</a></p>
+				
+            
 			</article>
 			<!-- /article -->
 
