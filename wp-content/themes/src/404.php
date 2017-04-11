@@ -5,7 +5,7 @@
 		<section class="error404background error404section">
 
 			<!-- article -->
-			<article id="post-404" style="font-family: 'Press Start 2P', cursive;">
+			<article id="post-404" style="font-family: 'Press Start 2P', sans-serif;">
 
 				<div class="fact fact--full">
 					<h1>GAME OVER</h1>
