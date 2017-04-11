@@ -2,7 +2,7 @@
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
-		<section class="error404background error404section">
+		<section class="background--tertiary text-align--center">
 
 			<!-- article -->
 			<article id="post-404" style="font-family: 'Press Start 2P', sans-serif;">
@@ -10,12 +10,12 @@
 				<div class="fact fact--full">
 					<h1>GAME OVER</h1>
 
-					<a class="error404image animate animate--down margin-bottom--huge" href="/"><img src="/wp-content/uploads/2017/04/space-invader.svg" /></a>
+					<a class="fact__icon max-width--500 animate animate--down margin-bottom--huge" href="/"><img src="/wp-content/uploads/2017/04/space-invader.svg" /></a>
 
 					<h2>You have wasted	<span id="demo"></span> seconds</h2>
 					<h2> on a page that doesn't exist!</h2>
 
-					<p class="hover404"> <a href="/">Go back to awesome video game stats</a></p>
+					<p><a href="/">Go back to awesome video game stats</a></p>
 				</div>
 
 			</article>
