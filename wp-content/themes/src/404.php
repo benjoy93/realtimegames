@@ -1,11 +1,11 @@
-<?php get_header(); ?>
+<?php get_header( '404' ); ?>
 
 	<main role="main" aria-label="Content">
 		<!-- section -->
 		<section class="error404background error404section">
 
 			<!-- article -->
-			<article id="post-404">
+			<article id="post-404" style="font-family: 'Press Start 2P', cursive;">
 
 				<div class="fact fact--full">
 					<h1>GAME OVER</h1>
