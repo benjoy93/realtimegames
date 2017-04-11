@@ -10,7 +10,7 @@
 				<div class="fact fact--full">
 					<h1>GAME OVER</h1>
 
-					<a class="error404image animate animate--down margin-bottom--huge" href="/"><img src="http://realtimegames.dev/wp-content/uploads/2017/04/space-invader.svg" /></a>
+					<a class="error404image animate animate--down margin-bottom--huge" href="/"><img src="/wp-content/uploads/2017/04/space-invader.svg" /></a>
 
 					<h2>You have wasted	<span id="demo"></span> seconds</h2>
 					<h2> on a page that doesn't exist!</h2>
