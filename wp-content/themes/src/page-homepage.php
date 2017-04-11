@@ -3,7 +3,7 @@
 <main role="main" aria-label="Content">
 
 	<section class="fact fact--full text-color--dark">
-		<aside class="position--absolute position--top position--left padding--large text-align--left">
+		<aside class="position--absolute position--top position--left position--front padding--large text-align--left">
 			<h2>Credits</h2>
 			<?php
 			$args = array( 'post_type' => 'credit', 'posts_per_page' => -1 );
