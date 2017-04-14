@@ -537,3 +537,13 @@ function wpse_edit_text($content) {
 }
 
 add_action( 'admin_init', 'wpse_edit_footer' );
+
+
+/*------------------------------------*\
+    LINK TO PATTERN LIBRARY IN DASHBOARD
+\*------------------------------------*/
+add_action( 'admin_menu', 'register_my_custom_menu_page' );
+    function register_my_custom_menu_page() {
+    // add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
+    add_menu_page( 'RealTimeGames Pattern Library', 'Pattern Library', 'manage_options', '../wp-content/themes/src/public/library/index.html', '', 'dashicons-book', 3 );
+}
