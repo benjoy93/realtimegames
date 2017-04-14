@@ -1,8 +1,8 @@
 {
-    "project_logo": null,
+    "project_logo": "favicon.png",
     "project_favicon": "favicon.png",
-    "project_name": null,
-    "project_url": "realtimegames.today",
+    "project_name": "RealTimeGames",
+    "project_url": "/",
     "copyright_start_year": 2017,
     "client_name": null,
     "client_url": null,
