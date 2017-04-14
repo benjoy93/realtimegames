@@ -1,0 +1,7 @@
+body.login {
+    background-color: #14213D;
+}
+
+.login h1 a {
+  background-image: url('/wp-content/themes/src/img/RTG-White.png');
+}

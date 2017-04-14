@@ -543,7 +543,26 @@ add_action( 'admin_init', 'wpse_edit_footer' );
     LINK TO PATTERN LIBRARY IN DASHBOARD
 \*------------------------------------*/
 add_action( 'admin_menu', 'register_my_custom_menu_page' );
-    function register_my_custom_menu_page() {
+function register_my_custom_menu_page() {
     // add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
     add_menu_page( 'RealTimeGames Pattern Library', 'Pattern Library', 'manage_options', '../wp-content/themes/src/public/library/index.html', '', 'dashicons-book', 3 );
 }
+
+/*------------------------------------*\
+    CUSTOM LOGIN STYLES
+\*------------------------------------*/
+
+function my_custom_login() {
+    echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login-styles.css" />';
+}
+add_action('login_head', 'my_custom_login');
+
+function my_login_logo_url() {
+return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+return 'Real Time Games Logo';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
