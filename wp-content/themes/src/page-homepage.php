@@ -32,7 +32,7 @@
 	<h1><?php the_field('intro_header', 4); ?></h1>
 	<p class="text-weight--bold"><?php the_field('intro_text', 4); ?></p>
 
-	<a href="#facts"><img class="max-width--50 animate animate--down" src="<?php the_field('arrow_icon', 4); ?>"></a>
+	<a href="#facts"><img class="max-width--50 animate animate--down" src="<?php the_field('arrow_icon', 4); ?>" alt="animated down arrow"></a>
 </section>
 
 <section id="facts">
