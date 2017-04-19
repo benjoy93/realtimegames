@@ -38,14 +38,36 @@ module.exports = function(grunt) {
         },
 
         autoprefixer: {
-          options: {
-            browsers: ['last 8 versions']
-          },
-          dist: { // Target
-            files: {
-              'style-release.css': 'style.css'
+            options: {
+                browsers: ['last 8 versions']
+            },
+            dist: { // Target
+                files: {
+                    'style-release.css': 'style.css'
+                }
             }
-          }
+        },
+
+        svgmin: {
+            options: {
+                plugins: [
+                    {
+                        removeViewBox: false
+                    }, {
+                        removeUselessStrokeAndFill: false
+                    }, {
+                        removeAttrs: {
+                            attrs: ['xmlns']
+                        }
+                    }
+                ]
+            },
+            dist: {
+                files: {
+                    'dist/logo-black.svg': 'img/logo-black.svg',
+                    'dist/logo-white.svg': 'img/logo-white.svg'
+                }
+            }
         }
     });
 
@@ -53,7 +75,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-svgmin');
 
-    grunt.registerTask('compile',['sass','autoprefixer','cssmin','watch']);
+
+    grunt.registerTask('compile',['sass','autoprefixer','cssmin','svgmin','watch']);
 
 }

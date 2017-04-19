@@ -14,6 +14,7 @@
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-svgmin": "^4.0.0"
   }
 }
