@@ -5,11 +5,12 @@
  */
 
 .fact {
-    padding: 20px;
+    padding: 50px;
     min-height: 50vh;
     text-align: center;
 
     @include bp-min-width($bp-tablet) {
+        padding: 20px;
         height: 100vh;
     }
 
@@ -23,7 +24,7 @@
         position: relative;
         padding: $spacing-normal;
 
-        @include bp-min-width($bp-mobile) {
+        @include bp-min-width($bp-tablet) {
             position: absolute;
             padding: $spacing-huge;
         }

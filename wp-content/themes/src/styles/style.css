@@ -583,12 +583,13 @@ p {
  * -----------------------------------------------------------------------------
  */
 .fact {
-  padding: 20px;
+  padding: 50px;
   min-height: 50vh;
   text-align: center;
 }
 @media all and (min-width: 1024px) {
   .fact {
+    padding: 20px;
     height: 100vh;
   }
 }
@@ -601,7 +602,7 @@ p {
   position: relative;
   padding: 10px;
 }
-@media all and (min-width: 640px) {
+@media all and (min-width: 1024px) {
   .fact__source {
     position: absolute;
     padding: 40px;
@@ -674,13 +675,26 @@ p {
   display: inline-block;
 }
 
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}
+.float--clear {
+  clear: both;
+}
+
 /**
  * -----------------------------------------------------------------------------
  * $FLEX
  * -----------------------------------------------------------------------------
  */
-.flex--center {
+.flex {
   display: flex;
+}
+
+.flex--center {
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -748,6 +762,19 @@ p {
 }
 .max-width--500 {
   max-width: 500px;
+}
+
+@media all and (min-width: 1024px) {
+  .width--half {
+    float: left;
+    width: 50%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .width--third {
+    float: left;
+    width: 33.3333%;
+  }
 }
 
 /**

@@ -2,7 +2,7 @@
 
 <main role="main" aria-label="Content">
 
-	<section class="fact height--full flex--center text-color--dark">
+	<section class="fact height--full flex flex--center text-color--dark">
 		<aside class="position--absolute position--top position--left position--front padding--large text-align--left">
 			<h2>Credits</h2>
 			<?php
@@ -43,10 +43,17 @@
 	$loop = new WP_Query( $args );
 	while ( $loop->have_posts() ) : $loop->the_post();
 	$increment = get_field('increment_value');
+	$type = get_field('fact_type');
 
 	?>
 
-	<section class="fact position--relative flex--center <?php the_title(); ?>" id="<?php the_title(); ?>" data-increment="<?php echo $increment; ?>" style="background-color: <?php the_field('background_colour'); ?>">
+	<?php
+	if ($type != "half") {
+		echo "<div class='float--clear'></div>";
+	}
+	?>
+
+	<section class="fact position--relative flex flex--center width--<?php echo $type; ?> <?php the_title(); ?>" id="<?php the_title(); ?>" data-increment="<?php echo $increment; ?>" style="background-color: <?php the_field('background_colour'); ?>">
 		<div class="fact__container ">
 
 			<div class="fact__icon">

@@ -9,3 +9,9 @@
     &--inline { display: inline; }
     &--inline-block { display: inline-block; }
 }
+
+.float {
+    &--left { float: left; }
+    &--right { float: right; }
+    &--clear { clear: both; }
+}

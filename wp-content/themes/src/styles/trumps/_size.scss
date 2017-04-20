@@ -16,3 +16,15 @@
     &--200 { max-width: 200px; }
     &--500 { max-width: 500px; }
 }
+
+.width {
+    &--half { @include bp-min-width($bp-tablet) {
+        float: left;
+        width: 50%;
+    } }
+
+    &--third { @include bp-min-width($bp-tablet) {
+        float: left;
+        width: 33.3333%;
+    } }
+}
