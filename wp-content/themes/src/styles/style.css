@@ -586,10 +586,6 @@ p {
   padding: 20px;
   min-height: 50vh;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 @media all and (min-width: 1024px) {
   .fact {
@@ -610,9 +606,6 @@ p {
     position: absolute;
     padding: 40px;
   }
-}
-.fact--full {
-  height: 100vh;
 }
 
 /**
@@ -734,6 +727,10 @@ p {
  * $SIZE
  * -----------------------------------------------------------------------------
  */
+.height--full {
+  height: 100vh;
+}
+
 .max-width--20 {
   max-width: 20px;
 }

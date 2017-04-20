@@ -7,7 +7,7 @@
 			<!-- article -->
 			<article id="post-404" style="font-family: 'Press Start 2P', sans-serif;">
 
-				<div class="fact fact--full flex">
+				<div class="fact height--full flex--center">
 					<h1>GAME OVER</h1>
 
 					<a class="fact__icon max-width--500 animate animate--down margin-bottom--huge"><img src="/wp-content/uploads/2017/04/space-invader.svg" alt="space invader" /></a>

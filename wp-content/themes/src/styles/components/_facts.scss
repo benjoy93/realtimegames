@@ -9,11 +9,6 @@
     min-height: 50vh;
     text-align: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
     @include bp-min-width($bp-tablet) {
         height: 100vh;
     }
@@ -32,9 +27,5 @@
             position: absolute;
             padding: $spacing-huge;
         }
-    }
-
-    &--full {
-        height:100vh;
     }
 }
